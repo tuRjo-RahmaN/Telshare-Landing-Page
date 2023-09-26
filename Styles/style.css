@@ -1,0 +1,398 @@
+.logo
+{
+    width: 20%;
+}
+nav
+{
+    background-color: #8F8F8F;
+}
+nav a
+{
+    margin-right: 15px;
+    color: white;
+    font-weight: 500;
+    width: unset;
+    text-wrap: nowrap;
+}
+nav i
+{
+    cursor: pointer;
+}
+nav button
+{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #D4D2D2;
+    color: black;
+    font-weight: 500;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+nav button:hover
+{
+    background-color: white;
+}
+
+/* Banner */
+.banner
+{
+    background-color: #535353;
+    margin-bottom: 50px;
+}
+.banner-text
+    {
+        width: 50%;
+        color: white;
+    }
+.banner img
+{
+    width: 40%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.banner button
+{
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #D4D2D2;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.banner button:hover
+{
+    background-color: #FFFFFF;
+}
+
+/* Services */
+.all-cards
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.icon
+{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.card
+{
+    border-radius: 10px !important;
+}
+.card:nth-child(odd){
+    background-color: #8f8f8f;
+}
+.card:nth-child(even){
+    background-color: #d4d2d2;
+}
+.card a
+{
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: fit-content;
+    font-weight: 500;
+    font-size: small;
+    transition: background-color 0.5s;
+}
+.card:nth-child(odd) a
+{
+    background-color: #D4D2D2 !important;
+    font-weight: bold;
+}
+.card:nth-child(odd) a:hover
+{
+    background-color: white !important;
+}
+.card:nth-child(even) a
+{
+    background-color: white !important;
+    font-weight: bold;}
+.card:nth-child(even) a:hover
+{
+    background-color: #8F8F8F !important;
+}
+.card h5
+{
+    text-wrap: nowrap;
+}
+.card-text
+{
+    width: 50%;
+    text-align: end;
+    margin: 30px auto 0;
+    font-size: small;
+    margin-right: 0;
+}
+
+
+/* Image with text */
+.services
+{
+    margin-bottom: 50px;
+}
+.image-with-text-section img
+{
+    width: 50%;
+}
+.image-with-text
+{
+    width: 40%;
+}
+.image-with-text button
+{
+    color: white !important;
+    background-color: #8f8f8f;
+    font-weight: 500;
+    transition: background-color 0.5s;
+}
+.image-with-text button:hover
+{
+    background-color: #535353;
+}
+li
+{
+    margin-bottom: 7px;
+    list-style: none;
+}
+
+/* Video With Text */
+.video-with-text
+{
+    width: 40%;
+}
+.video-with-text .nav-btn
+{
+    color: #D4D2D2;
+}
+.video-with-text-section
+{
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    background-color: #343A40;
+}
+.video-with-text-section img
+{
+    width: 50%;
+    border-radius: 20px;
+}
+.video-with-text-section .nav-btn
+{
+    background-color: #D4D2D2;
+}
+.video-with-text-section button:hover
+{
+    background-color: #b7b9b9;
+}
+
+footer
+{
+    background-color: #535353;
+}
+.footer-logo
+{
+    width: 50%;
+}
+.footer-inside
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+.subscribe-btn 
+{
+    background-color: #d4d2d2;
+}
+.subscribe-btn:hover
+{
+    background-color: white;
+}
+
+@media only screen and (max-width: 576px)
+{
+    .logo
+    {
+        width: 40%;
+    }
+    nav a
+    {
+        width: 100%;
+    }
+    .banner-text
+    {
+        order: 2;
+        width: 100%;
+    }
+    .banner-img
+    {
+        order: 1;
+        margin-bottom: 20px !important;
+    }
+    .all-cards
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .banner img
+    {
+        width: 100%;
+        margin: 20px 0 10px;
+    }
+    .image-with-text-section img
+    {
+        width: 100%;
+    }
+    .image-with-text
+    {
+        order: 2;
+        width: 100%;
+    }
+    .image-with-text-pic
+    {
+        order: 1;
+        margin-bottom: 15px;
+    }
+    .image-with-text h1
+    {
+        font-size: xx-large;
+    }
+    .video-with-text
+    {
+        width: 100%;
+    }
+
+    .video-with-text h1
+    {
+        font-size: x-large;
+    }
+    .video-with-text-section img
+    {
+        width: 100%;
+    }
+    .footer-logo
+    {
+        width: 70%;
+    }
+    .footer-inside
+    {
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px)
+{
+    .all-cards
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card h5
+    {
+        font-size: medium;
+    }
+    .card-text
+    {
+        margin: 20px auto 0;
+        margin-right: 0;
+    }
+    .logo
+    {
+        width: 30%;
+    }
+    .banner-text
+    {
+        order: 2;
+        width: 100%;
+    }
+    .banner-img
+    {
+        order: 1;
+        margin-bottom: 20px !important;
+    }
+    .banner img
+    {
+        width: 100%;
+        margin: 40px 0 30px;
+    }
+    .image-with-text-section img
+    {
+        width: 100%;
+    }
+    .image-with-text
+    {
+        order: 2;
+        width: 100%;
+    }
+    .image-with-text-pic
+    {
+        order: 1;
+        margin-bottom: 15px;
+    }
+    .video-with-text
+    {
+        width: 100%;
+    }
+    .video-with-text-section img
+    {
+        width: 100%;
+    }
+    .footer-logo
+    {
+        width: 70%;
+    }
+    .footer-inside
+    {
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px)
+{
+    .card h5
+    {
+        font-size: medium;
+    }
+    .image-with-text-section
+    {
+        align-items: center;
+    }
+    .image-with-text-section img
+    {
+        width: 40%;
+        height: 40%;
+    }
+    .image-with-text
+    {
+        width: 50%;
+    }
+    .image-with-text h1 
+    {
+        font-size: x-large;
+        margin-bottom: 20px !important;
+    }
+    .image-with-text h5 
+    {
+        font-size: medium;
+    }
+    .image-with-text p 
+    {
+        margin-bottom: 10px !important;
+    }
+    .nav-btn
+    {
+        font-size: x-small;
+    }
+    .video-with-text h1
+    {
+        font-size: x-large;
+    }
+   
+}
